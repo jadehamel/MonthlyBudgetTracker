@@ -20,7 +20,14 @@ function updateCountdown() {
   // Calculate the remaining amount
   const remainingAmount = (startAmount - (secondsPassed / totalSecondsInMonth * startAmount)).toFixed(10);
 
+  // Calculate weekly and daily budgets
+  const weeklyBudget = (startAmount / (daysInMonth / 7)).toFixed(2);
+  const dailyBudget = (startAmount / daysInMonth).toFixed(2);
+
   // Update the DOM elements
+  document.getElementById('initialBudget').textContent = `Initial Monthly Budget: $${startAmount}`;
+  document.getElementById('weeklyBudget').textContent = `Weekly Budget: $${weeklyBudget}`;
+  document.getElementById('dailyBudget').textContent = `Daily Budget: $${dailyBudget}`;
   document.getElementById('date').textContent = `${now.toLocaleString('default', { month: 'long' })} ${day}, ${year}`;
   document.getElementById('amount').textContent = `$${remainingAmount}`;
 
