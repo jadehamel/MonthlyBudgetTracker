@@ -2,7 +2,7 @@
 
 ## Description
 
-The Monthly Budget Tracker is a web-based application that helps users keep track of their monthly spending. Starting with a budget of $575.00, the application displays a dynamically updating countdown that shows the remaining amount for the month, considering the current date and time. This allows users to see how much money is still available to spend for the rest of the month.
+The Monthly Budget Tracker is a web-based application that helps users keep track of their monthly spending. Starting with a budget of $4000.00, the application displays a dynamically updating countdown that shows the remaining amount for the month, considering the current date and time. This allows users to see how much money is still available to spend for the rest of the month.
 
 ## Features
 
