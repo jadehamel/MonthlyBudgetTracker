@@ -25,7 +25,7 @@ function updateCountdown() {
   const dailyBudget = (startAmount / daysInMonth).toFixed(2);
 
   // Update the DOM elements
-  document.getElementById('initialBudget').textContent = `Initial Monthly Budget: $${startAmount}`;
+  document.getElementById('initialBudget').textContent = `Monthly Budget: $${startAmount}`;
   document.getElementById('weeklyBudget').textContent = `Weekly Budget: $${weeklyBudget}`;
   document.getElementById('dailyBudget').textContent = `Daily Budget: $${dailyBudget}`;
   document.getElementById('date').textContent = `${now.toLocaleString('default', { month: 'long' })} ${day}, ${year}`;
