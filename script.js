@@ -18,7 +18,7 @@ function updateCountdown() {
   const secondsPassed = ((day - 1) * 24 * 60 * 60) + (hour * 60 * 60) + (minute * 60) + second;
 
   // Calculate the remaining amount
-  const remainingAmount = (startAmount - (secondsPassed / totalSecondsInMonth * startAmount)).toFixed(10);
+  const remainingAmount = (startAmount - (secondsPassed / totalSecondsInMonth * startAmount)).toFixed(3);
 
   // Calculate weekly and daily budgets
   const weeklyBudget = (startAmount / (daysInMonth / 7)).toFixed(2);
